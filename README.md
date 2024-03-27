@@ -18,19 +18,26 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+ENUNCIADO:
 
-## Learn More
+------------------------ CONSTRUYE UN MOSAICO DE PELÍCULAS ------------------------------------------------- ------------------------ Duración Máxima: 60 minutos --------------------------------------------------------
 
-To learn more about Next.js, take a look at the following resources:
+1 - Reglas: ------ 1.1 - Puedes consultar documentación y buscar em google ----------------------------------------------
+------ 1.2 - No puedes usar herramientas de inteligencia artificial como ChatGPT o Copilot ------------------ ------ 1.3 - Puedes usar los paquetes y frameworks que creas convenientes -----------------------------------
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2 - Objetivo: 2.1 - Desarrollar una aplicación en React que permita a los usuarios buscar películas utilizando la API de OMDb (Open Movie Database). La aplicación debe presentar los resultados en un formato de mosaico y permitir a los usuarios ver detalles de películas específicas.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3 - Requisitos:
 
-## Deploy on Vercel
+3.1 - Pantalla Principal: 3.1.1 - Implementa un campo de búsqueda para que los usuarios puedan buscar películas por título. 3.1.2 - Muestra los resultados de la búsqueda en un mosaico, donde cada elemento del mosaico representa una película. Cada elemento debe incluir al menos la imagen de la película, el título y el año de lanzamiento.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3.2 - Pantalla de Detalles de la Película: 3.2.1 - Al hacer clic en una película del mosaico, el usuario debe ser dirigido a una pantalla de detalles de la película.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3.3 - Conexión con la API de OMDb: 3.3.1 - Utiliza la API de OMDb para buscar películas y obtener detalles específicos de cada película. Documentación de la API: http://www.omdbapi.com/
+
+3.4 - API movies:
+https://www.omdbapi.com/?apikey=acb6d8ef&type=movie&s={query}&page={page}
+
+Ejemplo:  
+https://www.omdbapi.com/?apikey=acb6d8ef&type=movie&s=avengers&page=1
+4 - Extras (Opcionales): 4.1 - Si completas los requisitos básicos y aún tienes tiempo, considera añadir una o más de las siguientes funcionalidades para mejorar tu aplicación: 4.1.1 - Añadir/Eliminar Películas: Permite a los usuarios añadir películas a un listado de favoritos o eliminarlas de este. 4.1.2 - Manejo de Errores: Implementa una gestión adecuada de errores, como búsquedas que no devuelven resultados o problemas de conexión con la API. 4.1.3 - Filtros de Búsqueda: Añade filtros para refinar las búsquedas, como por año, género o director. 4.1.4 - Diseño y UX: Mejora la interfaz de usuario y la experiencia del usuario con un diseño más atractivo, animaciones o transiciones suaves.
